@@ -34,3 +34,7 @@
 The checkpoint family is substantially more capable than any one checkpoint.
 
 This is the central experimental observation behind the current investigation into LoRA capacity, interference, replay strategy, and adapter specialization.
+
+## Publication v1 qualification
+
+The 36-item editing scores above are historical: their referenced benchmark source is missing. Semantic scores are recorded annotations of archived outputs, not fresh inference or independent regrading. The elimination rule is a curriculum hypothesis under investigation. See [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md).

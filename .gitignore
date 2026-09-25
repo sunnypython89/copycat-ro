@@ -31,3 +31,9 @@ checkpoints/
 Thumbs.db
 .vscode/
 .idea/
+
+# Explicit publication exclusions
+.env.*
+*.pem
+*.key
+.cache-huggingface/

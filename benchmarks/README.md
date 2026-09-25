@@ -1,6 +1,6 @@
 # Benchmarks
 
-This directory is reserved for frozen Copycat benchmark files.
+This directory contains the six available frozen semantic JSONL benchmarks, copied byte-for-byte. HASHES.sha256 uses paths relative to this directory.
 
 ## Rules
 
@@ -30,3 +30,5 @@ An **unseen idiom** is partly a test of lexical-cultural knowledge in the base m
 A **taught idiom used in a new context** is a better test of learned generalization.
 
 These should not be conflated.
+
+The historical 36-item editing source is missing and is not reconstructed. The benchmark families list includes historical context, not a claim that an editing benchmark file is shipped.

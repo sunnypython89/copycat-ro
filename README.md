@@ -14,7 +14,7 @@ The project uses incremental LoRA adapters, frozen benchmarks, replay, error-dri
 
 Current consolidation checkpoint: **Copycat 10**
 
-Stable capability:
+Historical editing result (missing benchmark source; not rerunnable here):
 - strict editing benchmark: **36/36**
 
 Current semantic results:
@@ -83,7 +83,11 @@ This is now a central curriculum target.
 
 - `docs/LIMITS_v1.md` — detailed report of observed limitations
 - `docs/RESULTS.md` — checkpoint and benchmark history
-- future: frozen benchmarks, training scripts, evaluation scripts, and reproducibility notes
+- `benchmarks/` — six frozen semantic benchmarks and SHA-256 hashes
+- `gold/` — exact training datasets and replay subsets
+- `training/`, `evaluation/` — historical scripts
+- `results/`, `reports/` — raw outputs, annotations and technical reports
+- [Experiment index](docs/EXPERIMENT_INDEX.md), [publication notes](docs/PUBLICATION_NOTES.md), [reproduction instructions](docs/REPRODUCIBILITY.md)
 
 ## Academic review
 
@@ -104,3 +108,20 @@ The project builds on the OpenLLM-Ro RoMistral model. Any redistribution of mode
 - specialized adapters with consolidation or routing.
 
 The goal is not to maximize one benchmark score. The goal is to discover stable semantic rules that continue to work as tests become harder.
+
+## Reproducible artifacts v1
+
+This release supports offline verification of datasets, recorded results and annotations, and an explicit available-benchmark workflow for new experiments. No weights or adapters are distributed. Full historical end-to-end reproduction is limited by the missing editing benchmark and unpinned runtime/model revisions. Semantic scores above are recorded human annotations, not freshly rerun evaluations.
+
+From the repository root, without GPU dependencies:
+
+```bash
+python tools/verify_publication.py
+python tools/scan_secrets.py .
+```
+
+Curriculum hypothesis under investigation, not a universal demonstrated truth:
+
+> Informația nouă elimină o variantă numai dacă o contrazice sau o face incompatibilă cu dovezile disponibile.
+>
+> New information eliminates a candidate only if it contradicts that candidate or makes it incompatible with the available evidence.

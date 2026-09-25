@@ -13,8 +13,7 @@ This document describes the current experimental protocol for Copycat RO.
 
 - GPU: NVIDIA GeForce RTX 3080 Ti
 - OS: Windows 11
-- Local project directory used during development:
-  `C:\Users\HomePc\Desktop\chatmistral`
+- Runtime layout: flat working directory created explicitly by the materialization tool
 
 Hardware details are reported for reproducibility, not as a requirement.
 
@@ -114,22 +113,52 @@ A correct conclusion produced through contradictory eliminations is not treated 
 
 This rule emerged from repeated failures across Lessons 06–10.
 
-## Files still to import from the local research folder
+## Published artifacts and supported workflow
 
-The public repository currently contains the research documentation first.
+The selected datasets, scripts, results and reports are now included. No adapter weights are distributed. The experiment index is the verified lineage: Copycat 05 is a separate fresh-LoRA branch; 05B starts from 04, and 10 starts from 07. The earlier approximate diagram omits intermediate branches.
 
-The following classes of local artifacts should be imported next:
+### Offline verification (standard library only)
 
-- frozen benchmark JSONL files;
-- Gold JSONL files;
-- benchmark hashes;
-- training scripts;
-- evaluation scripts;
-- scored raw result JSONL files;
-- checkpoint metadata;
-- selected error reports.
+```bash
+python tools/verify_publication.py
+python tools/scan_secrets.py .
+python tools/materialize_workspace.py ../copycat-runtime --available-benchmarks-only --with-results
+```
 
-Large model/adaptor weights should not be committed directly to GitHub. A model hosting platform is more appropriate for those artifacts.
+The target directory must not exist. Materialization copies the archival scripts and data into their historical flat layout. `--available-benchmarks-only` removes the absent editing benchmark from BENCHMARKS/EXPECTED in runtime training-script copies only; it does not change Gold data, hyperparameters, training updates or the frozen semantic benchmarks. The publication keeps the original public-script versions. Omitting this flag preserves the historical missing-file dependency. `--with-results` is for historical analysis; omit it for new inference to avoid output-name collisions.
+
+Historical scorers may be run only on those saved outputs, from the runtime directory. Their fixed ID labels do not measure a new model. New outputs require fresh review against the reference/criteria fields.
+
+### New GPU experiments (not executed for this publication)
+
+Install PyTorch with CUDA appropriate for your own system, transformers, peft, accelerate and bitsandbytes. Exact historical versions are not completely recorded; no speculative version lock is supplied. Obtain the attributed upstream base model under its applicable terms. The scripts use 4-bit NF4 with float16 compute; successful rerunning on a new environment and bitwise-identical weights are not certified.
+
+In a fresh materialized runtime, the main training order is:
+
+```bash
+python train_copycat_04.py
+python train_copycat_05b_epoch1.py
+python train_copycat_05b_epoch2.py
+python train_copycat_06_epoch1.py
+python train_copycat_07_epoch1.py
+python train_copycat_08_epoch1.py
+python train_copycat_09_epoch1.py
+python train_copycat_10_epoch1.py
+```
+
+`train_copycat_05.py` is an optional separate fresh-LoRA branch. Copycat 10 uses the saved 07 parent, not the 09 adapter. Never rerun the 04 script into an existing output directory: the original 04 script does not refuse overwriting. Use a fresh runtime per reproduction. Other historical branches used in older baseline evaluators are not all distributed in this selected release.
+
+From the repository root, to evaluate an independently recreated adapter only on available semantic benchmarks:
+
+```bash
+python evaluation/evaluate_available.py --checkpoint 10 --adapter ../copycat-runtime/copycat_10_consolidare_epoch1_adapter --output ../copycat-runtime/new_semantic_10.jsonl
+```
+
+This new portability helper follows the recorded generation settings (160 new tokens for 04–09; 384 for 10), validates benchmark hashes and refuses to overwrite output. It omits editing entirely. It produces unscored new answers; historical pass-ID lists must not be reused. For the separate 09 route experiment the original script uses 384 tokens; the main 09 evaluation uses 160.
+
+## Scope limitation
+
+The missing editing benchmark is not required for training updates or the available semantic benchmark tasks, but it IS required by the original aggregate scripts. See PUBLICATION_NOTES.md for the precise distinction. No benchmark is reconstructed. This release reproduces data/annotation evidence and supplies a reduced-scope experiment workflow, not a claim that every historical score can be regenerated.
 
 ## Reproducibility rule for future commits
 
@@ -144,3 +173,7 @@ Every reported score should be traceable to:
 - epoch count;
 - seed;
 - raw evaluation output.
+
+### Windows console encoding
+
+Use `python -X utf8 script.py` for historical scorers on Windows. Their Romanian console output may otherwise fail under a legacy code page; saved annotations are not changed. The four included historical scoring scripts were replayed on isolated saved outputs and reproduced all 588 scored records exactly as parsed JSON.

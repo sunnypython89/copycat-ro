@@ -1,0 +1,6 @@
+# Preserve benchmark, dataset and result bytes across platforms.
+*.jsonl -text
+*.json -text
+*.py -text
+*.md -text
+*.sha256 -text

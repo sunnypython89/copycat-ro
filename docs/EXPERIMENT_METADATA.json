@@ -1,0 +1,588 @@
+{
+  "copycat_editare_04_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "dataset": "gold_editare_04.jsonl",
+      "num_examples": 104,
+      "epochs": 4,
+      "learning_rate": 0.0002,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "seed": 42
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "d35b47eb2863cf6275083dae712751e93f581433a62db11b774e55b79fc74624",
+    "source_config_sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041"
+  },
+  "copycat_05_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "gold_romana_05.jsonl",
+          "count": 75,
+          "sha256": "085bb692644e148a1251608e2d0af8cfb7d1b7aa32a89b0fb8859dd046d28b90"
+        }
+      ],
+      "benchmark_hashes_before": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0"
+      },
+      "epochs": 3,
+      "learning_rate": 0.0001,
+      "max_length": 384,
+      "gradient_accumulation": 4,
+      "batch_size": 1,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "seed": 42,
+      "optimizer_steps": 135,
+      "epoch_mean_losses": [
+        0.6589289324737919,
+        0.3264717133212529,
+        0.20741351158928242
+      ],
+      "benchmark_hashes_after": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "v_proj",
+        "q_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "16b133133947921bbfdf8342922c9823e6ee337cb5c40c95613570d8c3601a5b",
+    "source_config_sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f"
+  },
+  "copycat_05b_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "starting_adapter": "copycat_editare_04_adapter",
+      "starting_adapter_sha256": "5132125d6af582d1e48640148620c4aed827dc949722a3512561c4f5ea40c92b",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "gold_romana_05b.jsonl",
+          "count": 167,
+          "sha256": "7733c360e66f31b37c020caae26ca013829ce2bc577fee0082c035b3273e6674"
+        }
+      ],
+      "epochs": 1,
+      "learning_rate": 5e-05,
+      "seed": 42,
+      "batch_size": 1,
+      "gradient_accumulation": 4,
+      "max_length": 384,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "optimizer_steps": 68,
+      "mean_loss": 0.6461113171499299,
+      "benchmark_hashes_before": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0"
+      },
+      "benchmark_hashes_after": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "5d4650c6400f68b3981252e37d9a7629c88352ebf31c1d2cd305da2c108cda12",
+    "source_config_sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041"
+  },
+  "copycat_05b_epoch2_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "starting_adapter": "copycat_05b_adapter",
+      "starting_adapter_sha256": "04853254d54153dc75bb94c456edf3b091a703b90547ad6f6e949b5ca955eaa9",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "gold_romana_05b.jsonl",
+          "count": 167,
+          "sha256": "7733c360e66f31b37c020caae26ca013829ce2bc577fee0082c035b3273e6674"
+        }
+      ],
+      "epochs_this_run": 1,
+      "cumulative_epochs": 2,
+      "learning_rate": 5e-05,
+      "seed": 42,
+      "batch_size": 1,
+      "gradient_accumulation": 4,
+      "max_length": 384,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "optimizer_steps": 68,
+      "mean_loss": 0.4300511758390853,
+      "benchmark_hashes_before": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0"
+      },
+      "benchmark_hashes_after": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "v_proj",
+        "q_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "53faff223d4f12eb63600bfcecf3d9a8a574d97a37cf8df271323216c7cda66b",
+    "source_config_sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f"
+  },
+  "copycat_06_epoch1_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "starting_adapter": "copycat_05b_epoch2_adapter",
+      "starting_adapter_sha256": "975e82141f48850b9501cf3e986699829d83d14cc313db877285f4901fcd8878",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "replay_05b_incertitudine_noop.jsonl",
+          "count": 62,
+          "sha256": "a28cf9de1728c0504fd83304f0a62732554cf9c28d117b8b4b2641aca0ae0984"
+        },
+        {
+          "name": "gold_ambiguitate_06_training_filtered.jsonl",
+          "count": 85,
+          "sha256": "d7a3ba1b5a4ee43085f4da5e30a1ec252b3a4ac6dfed99887f179a8e8ff8f099"
+        }
+      ],
+      "lesson": "06",
+      "epochs_this_run": 1,
+      "learning_rate": 5e-05,
+      "seed": 42,
+      "batch_size": 1,
+      "gradient_accumulation": 4,
+      "max_length": 384,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "optimizer_steps": 63,
+      "mean_loss": 0.6122846081391716,
+      "benchmark_hashes_before": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332"
+      },
+      "benchmark_hashes_after": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "v_proj",
+        "q_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "65d0ca2eb0bc148edfe4fa6dd618b2f1b05a620bdf4cef05061425d7da7789be",
+    "source_config_sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f"
+  },
+  "copycat_07_epoch1_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "starting_adapter": "copycat_06_epoch1_adapter",
+      "starting_adapter_sha256": "fe9cc30e282c6fdb4fa3b2114ba56a072966b2ea28773c445716681aa19f153f",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "replay_05b_incertitudine_noop.jsonl",
+          "count": 62,
+          "sha256": "a28cf9de1728c0504fd83304f0a62732554cf9c28d117b8b4b2641aca0ae0984"
+        },
+        {
+          "name": "replay_07_gold06_clean_36.jsonl",
+          "count": 36,
+          "sha256": "188ecb02012149ee10cce9a0cf2a2725de6ff9b17e5dd897935a626f283de7fb"
+        },
+        {
+          "name": "gold_eliminare_07_training_filtered.jsonl",
+          "count": 75,
+          "sha256": "1aca8dfa67226230d374f2857df893bffa8b705e4ccca582655f81ae991dc926"
+        }
+      ],
+      "lesson": "07",
+      "epochs_this_run": 1,
+      "learning_rate": 5e-05,
+      "seed": 42,
+      "batch_size": 1,
+      "gradient_accumulation": 4,
+      "max_length": 384,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "optimizer_steps": 70,
+      "mean_loss": 0.43084852638075116,
+      "benchmark_hashes_before": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6"
+      },
+      "benchmark_hashes_after": {
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "v_proj",
+        "q_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "f86d4cbf7776bcf50dac68b792eeb30b02b8c8c88636d71ff2c6e835e16e575b",
+    "source_config_sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f"
+  },
+  "copycat_08_epoch1_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "starting_adapter": "copycat_07_epoch1_adapter",
+      "starting_adapter_sha256": "610c7ffd1a04f0cb89d304296a1e091068f254ba76b06fc7402ba822bef77a93",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "replay_05b_incertitudine_noop.jsonl",
+          "count": 62,
+          "sha256": "a28cf9de1728c0504fd83304f0a62732554cf9c28d117b8b4b2641aca0ae0984"
+        },
+        {
+          "name": "replay_08_gold06_clean_30.jsonl",
+          "count": 30,
+          "sha256": "7161ad22ac980890b10bfa3a1d68a8bd280b6cdd54074c5d61ca7c7938f5a490"
+        },
+        {
+          "name": "replay_08_gold07_clean_30.jsonl",
+          "count": 30,
+          "sha256": "d2bc3880daffcf6095e244d4608d9cd388b2a72449e5117d703328a667e484b4"
+        },
+        {
+          "name": "gold_prag_08_training_filtered.jsonl",
+          "count": 94,
+          "sha256": "4889d9be50e578a158f3be43e30d622c9f713008ab60fac72ed08518a82a0763"
+        }
+      ],
+      "lesson": "08",
+      "epochs_this_run": 1,
+      "learning_rate": 3e-05,
+      "seed": 42,
+      "batch_size": 1,
+      "gradient_accumulation": 4,
+      "max_length": 384,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "optimizer_steps": 80,
+      "mean_loss": 0.30462724179938616,
+      "benchmark_hashes_before": {
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6",
+        "benchmark_prag_08.jsonl": "ee1540a10a4b0b98119670fe91018329e1582c7b4e231a6ec707409db6d04104"
+      },
+      "benchmark_hashes_after": {
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6",
+        "benchmark_prag_08.jsonl": "ee1540a10a4b0b98119670fe91018329e1582c7b4e231a6ec707409db6d04104"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "c7d9e2a9b06ad7fd958f004b78e32c0a8d38e70b7cf8410430e1bb735d54e1d7",
+    "source_config_sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041"
+  },
+  "copycat_09_epoch1_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "starting_adapter": "copycat_08_epoch1_adapter",
+      "starting_adapter_sha256": "e6e5dc753993dca7d46396f17ca4db663e87f52af65bae52061b1ccdd96ecf5b",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "replay_05b_incertitudine_noop.jsonl",
+          "count": 62,
+          "sha256": "a28cf9de1728c0504fd83304f0a62732554cf9c28d117b8b4b2641aca0ae0984"
+        },
+        {
+          "name": "replay_08_gold07_clean_30.jsonl",
+          "count": 30,
+          "sha256": "d2bc3880daffcf6095e244d4608d9cd388b2a72449e5117d703328a667e484b4"
+        },
+        {
+          "name": "replay_09_gold08_clean_40.jsonl",
+          "count": 40,
+          "sha256": "53931e253320614dfd78a4a2c3bb2432348dd42a654f67d47f97f7c2eced997c"
+        },
+        {
+          "name": "gold_eliminare_secventiala_09.jsonl",
+          "count": 100,
+          "sha256": "9eb4209510929cb10f0ff88bac080abaa7eafd0e87d8a3b5a06b9b9923e71a93"
+        }
+      ],
+      "lesson": "09",
+      "epochs_this_run": 1,
+      "learning_rate": 2e-05,
+      "seed": 42,
+      "batch_size": 1,
+      "gradient_accumulation": 4,
+      "max_length": 384,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "optimizer_steps": 84,
+      "mean_loss": 0.09600529124166374,
+      "benchmark_hashes_before": {
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6",
+        "benchmark_prag_08.jsonl": "ee1540a10a4b0b98119670fe91018329e1582c7b4e231a6ec707409db6d04104",
+        "benchmark_eliminare_secventiala_09.jsonl": "5c7705741c675b2a5df10d0c97b1071f5d46c55c400554bc4abcbf1dd63d6570"
+      },
+      "benchmark_hashes_after": {
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6",
+        "benchmark_prag_08.jsonl": "ee1540a10a4b0b98119670fe91018329e1582c7b4e231a6ec707409db6d04104",
+        "benchmark_eliminare_secventiala_09.jsonl": "5c7705741c675b2a5df10d0c97b1071f5d46c55c400554bc4abcbf1dd63d6570"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "v_proj",
+        "q_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "8748dee4857985a3d655d482ed697805e236dc449ab15463f10dcc060429da6e",
+    "source_config_sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f"
+  },
+  "copycat_10_consolidare_epoch1_adapter": {
+    "training": {
+      "base_model": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "starting_adapter": "copycat_07_epoch1_adapter",
+      "starting_adapter_sha256": "610c7ffd1a04f0cb89d304296a1e091068f254ba76b06fc7402ba822bef77a93",
+      "sources": [
+        {
+          "name": "gold_editare_04.jsonl",
+          "count": 104,
+          "sha256": "2cbcb8360534cf88eeeef173cc7d3f63e086f56efe9821de5a6e37221a426630"
+        },
+        {
+          "name": "replay_05b_incertitudine_noop.jsonl",
+          "count": 62,
+          "sha256": "a28cf9de1728c0504fd83304f0a62732554cf9c28d117b8b4b2641aca0ae0984"
+        },
+        {
+          "name": "replay_08_gold06_clean_30.jsonl",
+          "count": 30,
+          "sha256": "7161ad22ac980890b10bfa3a1d68a8bd280b6cdd54074c5d61ca7c7938f5a490"
+        },
+        {
+          "name": "replay_08_gold07_clean_30.jsonl",
+          "count": 30,
+          "sha256": "d2bc3880daffcf6095e244d4608d9cd388b2a72449e5117d703328a667e484b4"
+        },
+        {
+          "name": "replay_09_gold08_clean_40.jsonl",
+          "count": 40,
+          "sha256": "53931e253320614dfd78a4a2c3bb2432348dd42a654f67d47f97f7c2eced997c"
+        },
+        {
+          "name": "replay_10_gold09_clean_40.jsonl",
+          "count": 40,
+          "sha256": "a272cb351055b06644738832bb06364470a1dc1fb54beca22f2415053bbda464"
+        },
+        {
+          "name": "gold_consolidare_10.jsonl",
+          "count": 120,
+          "sha256": "ff1a6bb1331f4b8f9d039a08fdcf8c14666c1485ce1ab945b049d84c5c17f1ea"
+        }
+      ],
+      "lesson": "10_consolidare",
+      "epochs_this_run": 1,
+      "learning_rate": 1e-05,
+      "seed": 42,
+      "batch_size": 1,
+      "gradient_accumulation": 4,
+      "max_length": 384,
+      "lora_r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "optimizer_steps": 107,
+      "mean_loss": 0.3543607519529323,
+      "benchmark_hashes_before": {
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6",
+        "benchmark_prag_08.jsonl": "ee1540a10a4b0b98119670fe91018329e1582c7b4e231a6ec707409db6d04104",
+        "benchmark_eliminare_secventiala_09.jsonl": "5c7705741c675b2a5df10d0c97b1071f5d46c55c400554bc4abcbf1dd63d6570",
+        "benchmark_consolidare_10.jsonl": "c80118f732860170371125a58266fa979e8efc0526c6864b2b53dd9d6b85eeec"
+      },
+      "benchmark_hashes_after": {
+        "benchmark_copycat_03_on_04.py": "8b27807ea0350b13297e4201234582a3a27a626047710f96c27ebe08ed247ad0",
+        "benchmark_romana_05.jsonl": "733bc505e4feaa3388a19490c8733adf71053bdd16055492b3832b2b56cd7aac",
+        "benchmark_ambiguitate_06.jsonl": "117ec316c4f596ddd02b4314f1ad005fcc89d1ba71017bfb70eb1aa9a3023332",
+        "benchmark_eliminare_07.jsonl": "e783ec268ffcc7758d6473f3cbaa47d0e99436d544e7f05104e17dfa180b15e6",
+        "benchmark_prag_08.jsonl": "ee1540a10a4b0b98119670fe91018329e1582c7b4e231a6ec707409db6d04104",
+        "benchmark_eliminare_secventiala_09.jsonl": "5c7705741c675b2a5df10d0c97b1071f5d46c55c400554bc4abcbf1dd63d6570",
+        "benchmark_consolidare_10.jsonl": "c80118f732860170371125a58266fa979e8efc0526c6864b2b53dd9d6b85eeec"
+      }
+    },
+    "configuration_evidence": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ],
+      "base_model_name_or_path": "OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23",
+      "revision": null,
+      "peft_version": "0.21.0"
+    },
+    "source_training_sha256": "ef22c8710460cb6bcd146fddfe18df3f55515160cc128aeb33a930bd4b251b6f",
+    "source_config_sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "source_files_unchanged": 240,
+  "frozen_benchmark_hash_matches": 6,
+  "annotation_replay_matching_records": 588,
+  "training_runtime_ast_equivalence_except_integrity_lists": true,
+  "gpu_training_or_inference_executed": false,
+  "secret_scan": "offline signatures; zero findings before manifest finalization; repeated before commit and after publication",
+  "limitations": [
+    "No independent regrading",
+    "No bitwise training reproducibility claim",
+    "Historical editing benchmark missing",
+    "No full historical package versions or upstream revision lock"
+  ]
+}

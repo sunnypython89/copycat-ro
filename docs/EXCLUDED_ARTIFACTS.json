@@ -1,0 +1,787 @@
+[
+  {
+    "path": "audit_and_prepare_lesson_09.py",
+    "sha256": "4b7e8dbf7a121728b0873c7d3b5a091d3f9f42f2c0ef6a1c949db06aaca6ffaf",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "audit_lectia_08.json",
+    "sha256": "a52804bec9c167589bc01630b721698a6082833b824c479185cdf0aba5aea09c",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "audit_lectia_09.json",
+    "sha256": "c22df362ff731a99f65ad2b44a19e54465643951c9253b0e8960690ac227e1b2",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "audit_prepare_analyze_10.py",
+    "sha256": "f5bbfaf23c8fe92781731a181ab4fa7b2789148d0de7f35479ea1ce8600abca4",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat.py",
+    "sha256": "b049ebee0ec4e09864abf1a87e0fc008cef3342ec7dde06dc6a52870a692f0ad",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat_02_results.jsonl",
+    "sha256": "63adeaadb82a0fb0da278201f9ca60aa730cb20c32cda69c0cc5a1d6c0ba24d8",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat_03.py",
+    "sha256": "6d2fe73025be73274a9079ab7f6bacca09c832db78f85ded1d7f3c54fd9cf185",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat_03_on_romana_01_results.jsonl",
+    "sha256": "adea3c89603c921f13f2e906a94ec35187ebc8562cb957f791a7c862e3759f46",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat_03_results.jsonl",
+    "sha256": "df132e7d8ba898af1aa7c29d5d29c7268932924aa287110ebf58f34733eacd4a",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat_04.py",
+    "sha256": "02f986ade3cccbd68d6d9eb1cf1755f74d7d85650cfd26d8dd44fd1eafc827ea",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat_04_on_romana_01_results.jsonl",
+    "sha256": "78244c3382ebc81d4b77612b3a8bd42b6be06fa66a4458ff636cc039683bc7c9",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_copycat_04_results.jsonl",
+    "sha256": "f3cc198e4f19839c685f0a91db7194aa85dd117688f6731bb8cc96bec6a85424",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "benchmark_romana_05.py",
+    "sha256": "fb6117b047c732e646c86c13f925f63f7cdcb29ffe1778fd77819cdb6444b279",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "build_gold_05b.py",
+    "sha256": "4b6a677488e84d3764e3db038ad524aa016e6f9ac6ccdacc7e6f4c741581f7e5",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "build_lesson_06.py",
+    "sha256": "9507a499d21361e9d6fefa709ec5a124f47773c25019ddb096a1dfceba177a33",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "build_lesson_07.py",
+    "sha256": "0e8abb656d102e3b30ccd8c32318df4f19c5a27833c338797185634f67018259",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "build_lesson_08.py",
+    "sha256": "b0dcbac258a05b967e111678ec31a9114e38d5ce57e5ac229b882c4788ed0336",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "build_lesson_09.py",
+    "sha256": "d72f49bbfaddc9443a6166b1333a4eb39317a533bd9c916393d5078fb5f93b75",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "build_lesson_10.py",
+    "sha256": "c4b6aed2df2056a5f0a3573b12296a9c39460a5c547604d63df7335b9f3aea8c",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "chat.py",
+    "sha256": "40d355e3173b4368800857e0eeb519386e6a26f2d5e0b2ba3744b7fe87d8c6f7",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "chat_copycat.py",
+    "sha256": "0480d4363cc57efb6b81b7800b21ddd66cbf1a0b6bf96a4c218f3feef0db2039",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "chat_copycat_04.py",
+    "sha256": "cde44ccafd6930886b5f67df881a000206e2799fcfe70df21bedf266b5e29dbd",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "chat_copycat_romana_01.py",
+    "sha256": "719daabdecb47ea7e20e4b86daa3387af7a02379585b2f005f8d371d21b25ed4",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "copycat_05_adapter/adapter_config.json",
+    "sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05_adapter/adapter_model.safetensors",
+    "sha256": "0c33a9ce7ca49de32a11f2b48c52cc9bd4eb6a28e8a78802ccba68648034017c",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05_adapter/copycat_training.json",
+    "sha256": "16b133133947921bbfdf8342922c9823e6ee337cb5c40c95613570d8c3601a5b",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_adapter/adapter_config.json",
+    "sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_adapter/adapter_model.safetensors",
+    "sha256": "04853254d54153dc75bb94c456edf3b091a703b90547ad6f6e949b5ca955eaa9",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_adapter/copycat_training.json",
+    "sha256": "5d4650c6400f68b3981252e37d9a7629c88352ebf31c1d2cd305da2c108cda12",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_epoch2_adapter/adapter_config.json",
+    "sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_epoch2_adapter/adapter_model.safetensors",
+    "sha256": "975e82141f48850b9501cf3e986699829d83d14cc313db877285f4901fcd8878",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_epoch2_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_epoch2_adapter/copycat_training.json",
+    "sha256": "53faff223d4f12eb63600bfcecf3d9a8a574d97a37cf8df271323216c7cda66b",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_epoch2_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_epoch2_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_05b_epoch2_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_06_epoch1_adapter/adapter_config.json",
+    "sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_06_epoch1_adapter/adapter_model.safetensors",
+    "sha256": "fe9cc30e282c6fdb4fa3b2114ba56a072966b2ea28773c445716681aa19f153f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_06_epoch1_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_06_epoch1_adapter/copycat_training.json",
+    "sha256": "65d0ca2eb0bc148edfe4fa6dd618b2f1b05a620bdf4cef05061425d7da7789be",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_06_epoch1_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_06_epoch1_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_06_epoch1_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_07_epoch1_adapter/adapter_config.json",
+    "sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_07_epoch1_adapter/adapter_model.safetensors",
+    "sha256": "610c7ffd1a04f0cb89d304296a1e091068f254ba76b06fc7402ba822bef77a93",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_07_epoch1_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_07_epoch1_adapter/copycat_training.json",
+    "sha256": "f86d4cbf7776bcf50dac68b792eeb30b02b8c8c88636d71ff2c6e835e16e575b",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_07_epoch1_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_07_epoch1_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_07_epoch1_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_08_epoch1_adapter/adapter_config.json",
+    "sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_08_epoch1_adapter/adapter_model.safetensors",
+    "sha256": "e6e5dc753993dca7d46396f17ca4db663e87f52af65bae52061b1ccdd96ecf5b",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_08_epoch1_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_08_epoch1_adapter/copycat_training.json",
+    "sha256": "c7d9e2a9b06ad7fd958f004b78e32c0a8d38e70b7cf8410430e1bb735d54e1d7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_08_epoch1_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_08_epoch1_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_08_epoch1_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_09_epoch1_adapter/adapter_config.json",
+    "sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_09_epoch1_adapter/adapter_model.safetensors",
+    "sha256": "2750ab7a5a14b8a511fee53181ee44202af4e70e45d1e7b07b8ad1d4cba013c6",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_09_epoch1_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_09_epoch1_adapter/copycat_training.json",
+    "sha256": "8748dee4857985a3d655d482ed697805e236dc449ab15463f10dcc060429da6e",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_09_epoch1_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_09_epoch1_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_09_epoch1_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_10_consolidare_epoch1_adapter/adapter_config.json",
+    "sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_10_consolidare_epoch1_adapter/adapter_model.safetensors",
+    "sha256": "89e115cbc8723af424dbf80ba25fc643d0f55f839f82cc1d0434a5011cc2d30a",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_10_consolidare_epoch1_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_10_consolidare_epoch1_adapter/copycat_training.json",
+    "sha256": "ef22c8710460cb6bcd146fddfe18df3f55515160cc128aeb33a930bd4b251b6f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_10_consolidare_epoch1_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_10_consolidare_epoch1_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_10_consolidare_epoch1_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_01_adapter/adapter_config.json",
+    "sha256": "ea0013a6c1f8e9aa2cb6fb8c760247655cfcaffe7b3de7184faf742f9b5a2b5f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_01_adapter/adapter_model.safetensors",
+    "sha256": "535d098ab9e336e84e1082b75a920079f6777ec3e9290806fe62f37afe44b5ab",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_01_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_01_adapter/copycat_training.json",
+    "sha256": "b8d929d6ca1404a05ad6b251578f8674f5200faf534e73d44b7dd6f53011f5e6",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_01_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_01_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_01_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_02_adapter/adapter_config.json",
+    "sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_02_adapter/adapter_model.safetensors",
+    "sha256": "43a03eaed197939f2777a3a55a4534026a0147c314a1dacc3189937ba0d8320a",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_02_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_02_adapter/copycat_training.json",
+    "sha256": "558066a97f0c002dcc5337c1bb98472fe45b4fa7654a4dc77e6052148fb63d12",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_02_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_02_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_02_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_03_adapter/adapter_config.json",
+    "sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_03_adapter/adapter_model.safetensors",
+    "sha256": "bc8d53c73729793f7b1770610c32e7a9f854153557c2cac44aa5287bf56752e7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_03_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_03_adapter/copycat_training.json",
+    "sha256": "16d68973eaad18df0fae9814891aee051f058dcb596b265ffc99bbd59e281a18",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_03_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_03_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_03_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_04_adapter/adapter_config.json",
+    "sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_04_adapter/adapter_model.safetensors",
+    "sha256": "5132125d6af582d1e48640148620c4aed827dc949722a3512561c4f5ea40c92b",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_04_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_04_adapter/copycat_training.json",
+    "sha256": "d35b47eb2863cf6275083dae712751e93f581433a62db11b774e55b79fc74624",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_04_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_04_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_editare_04_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_hardening_03.jsonl",
+    "sha256": "ff81202b2f70202ef06f7c4f635a547bb7c199400136fec4be52cecb9fe6cc26",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "copycat_romana_naturala_01_adapter/adapter_config.json",
+    "sha256": "e056b253f3ecf82fdd53f42bcbfc43ff0c542dc74f07ca7e64e88e521046c041",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_romana_naturala_01_adapter/adapter_model.safetensors",
+    "sha256": "cde1d293bdc232e1956c1df5a503343df0776a7c213c4915c1b8a0f1e9c0c46f",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_romana_naturala_01_adapter/chat_template.jinja",
+    "sha256": "7c1bba1675e657adc697a06d00b8e831745a79189f7533535f83f509774c79d0",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_romana_naturala_01_adapter/copycat_training.json",
+    "sha256": "dbc7844e1202e5493a94918780f671bf585c3169c7edeb0105e77d82f95796ac",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_romana_naturala_01_adapter/README.md",
+    "sha256": "3a4cdebf423b58c80a626c8be1e8d8e735c1fdd7f95a3b7bae4857e4d29a8ba7",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_romana_naturala_01_adapter/tokenizer.json",
+    "sha256": "107a53acc537db9efec29756024e117c2714e65487a7c7d898d5b90c24c4d209",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_romana_naturala_01_adapter/tokenizer_config.json",
+    "sha256": "74730d5015df30bb40fbaee4f02a94540f61090470ac04c37daa2712b190b120",
+    "reason": "Adapter directory excluded in full; no weights, tokenizer or model-card templates distributed"
+  },
+  {
+    "path": "copycat_train.jsonl",
+    "sha256": "4724c0d07a57c643ba0d9a9273d96b9e67f7e60bea6c5dfde585d01e14bdaba9",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_05b.log",
+    "sha256": "0635e983a25d2cac8d1fe440fa1686ef32061a63841cea5245c3d09c6d523ad8",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_05b_epoch2.log",
+    "sha256": "68b7e32f611b73b46fa15e0f29c4d1713182e240601c5b2f624fa7fd7588050f",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_06_epoch1.log",
+    "sha256": "6852f2c90ee04c80f2a3494a387f954f690b6dd537b35d02f9f821932efe1a9f",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_07_epoch1.log",
+    "sha256": "6b1af094e7d970cf68c4bf0efc7784cefd7d2c8ea81d0eedf3a4a04d14230b79",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_08_epoch1.log",
+    "sha256": "aff003aebd8d9b93a9e7de781690e3fb756a34a7dd2ddd9277d949a3d31f5011",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_09_epoch1.log",
+    "sha256": "d9dc0e71ae8fed13473ad6cf43542691d8f20af81a7a7afbd2ae36d9ef26f7e5",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_09_route.log",
+    "sha256": "2fa498a0b05e6d2fa2a50bf76acc4392f751b6d9a6f39f5ac2a26339d6acc852",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_copycat_10_epoch1.log",
+    "sha256": "762d6a4ab0f72e2bd348c07135492ccdc0ef8d17c3ee6f582f99eba85070b7b4",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_lesson_06_pretraining.log",
+    "sha256": "465753e2ce298a546053f8e297578fb6595ea0534533d890065ffb1580803077",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_lesson_07_pretraining.log",
+    "sha256": "adde4a118460692a44fc9e0c6d7d4d2609db78b817e9d1db5e80fde2815062cb",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_lesson_08_pretraining.log",
+    "sha256": "0b6245695e20aa9e611262da636faf3f5ea9e7e01f4954c6d171fe44a7cc35e4",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "evaluate_lesson_09_baselines.log",
+    "sha256": "fff1806f5a46df57a597a8a3ec58a151a84249534beb3a8396effa7b9f0f47b1",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_ambiguitate_06.jsonl",
+    "sha256": "d51128fdf2fb9a32110e99def2a1460f07292912b404dbdbbdaa87dd26d26881",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_editare_01.jsonl",
+    "sha256": "272f5c29eb5b37690380bf0fb98884858081920e3df037bfd1a62720991df93c",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_editare_01_v2.jsonl",
+    "sha256": "0bb1f219cf375549d9d6963f10389155c564b3a45d462768218b3f9f10e97dee",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_editare_02.jsonl",
+    "sha256": "5a2366eb56bf0c8131ada066dcbe5273c25af13854c303dc7d4b6ae70697e815",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_editare_03.jsonl",
+    "sha256": "b4d44a984b9392a897b0dd4b9a3a33a8da6ec0bda77a6e253c96d310f0d93a03",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_eliminare_07.jsonl",
+    "sha256": "e054ff39da9b558193a3fc2e2f04e4dc6642ec0bb8945c7a20411c294ac4eddb",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_prag_08.jsonl",
+    "sha256": "820c27eba8216c724f4b46d2fb76aa9d76596098e66ac0f2c41e1fd25f29fef1",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "gold_romana_naturala_01.jsonl",
+    "sha256": "b24ed51bc85c6c8c7e9a47bcff54703c4cf077c620c3123282cb61d7993a5223",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "prepare_copycat_04.py",
+    "sha256": "f307c20d09e9d9bb60f1cf0204350fff3baff7f4191ad36dd43cd6eff3b4a32f",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "prepare_copycat_romanian.py",
+    "sha256": "75fe8a165522d805f43bbe21ffe04f5cfeb498e99cef0fd8c3afe6e3dcbc4993",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "prepare_dataset_v3.py",
+    "sha256": "9874b51872cf263ed780c70c02eaac1aa0ce320c390e8b20d4af0f744c024c94",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "prepare_replay_and_audit_08.py",
+    "sha256": "dfd077d58136afd1103a2fe8d1873b878ddfe519bd9778c31c3cc880c9ac7480",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "prepare_training_08.py",
+    "sha256": "5f228f7ff1b1665874630a5dde1641833fd4e2db818eb3b1ebc473cf8b1af442",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "probe_base_romistral_idioms.log",
+    "sha256": "20ce7f05badc448de46380b76573da4c68873e272c01daa698c9d90fb455a4f8",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "probe_base_romistral_idioms.py",
+    "sha256": "9e90bb9711f0a74eeb3d37a7f88493b2effa59ae0af77fe87849f07ba31b2937",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "probe_base_romistral_idioms_results.jsonl",
+    "sha256": "092f6d1c5e29f2a411bbece82439da5ad0782c7fb9df8cd81213f38259ba12c3",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "probe_copycat_romanian.py",
+    "sha256": "1ba697ae1174a665333d53c6659a8c6e24f52a9aca724ea9c410f3cfcdbfbe53",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "probe_copycat_romanian_01_results.jsonl",
+    "sha256": "cd9c610c72f9840403baaac939682b57d31e87b92502f16ec40c562cd006d7d5",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "probe_copycat_romanian_04.jsonl",
+    "sha256": "19912706008741ba68723a431e3f06d043d1bf8720d77f61d98af0730f64d49a",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "romistral_log.jsonl",
+    "sha256": "842540f5ef7be6036d9c00a9d30a76f65f067c73989ed5f58c5ea292a192b03d",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat.py",
+    "sha256": "57693a6e0a9a7ef61f55d764ea8a79c05e57755d63f4143872e17918c90d9a19",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_05b_epoch1.log",
+    "sha256": "9efae06fbef58ac6b6541449c033b838485a425df9ef38f4807acb6355d0fbee",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_05b_epoch2.log",
+    "sha256": "68535057b42ea9dc8a94ccd59c3c5d9a9f4455d26de334239e6aaacfd4411718",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_06_epoch1.log",
+    "sha256": "897c754c995dc2ae3cb414efe5120055c68f6e97e8f5ab21d3508a69b54f7602",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_07_epoch1.log",
+    "sha256": "5b47e8ea59999f42c4871b1673e2df094a13a28a7954d4fd5b4071fb3f1ea3b9",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_08_epoch1.log",
+    "sha256": "9aa202173373ceae7bb6dbfd57cb1be29a945fb6f861db166021906d302db192",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_09_epoch1.log",
+    "sha256": "0b1f6ed91f450670de52c1fe8deb22229c1e7568794d98857543d5ef21bffa41",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_10_epoch1.log",
+    "sha256": "77ae3a92c562aaaf3f028ebdbaaf2f743fc3f65495152002e78988159cb8d674",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  },
+  {
+    "path": "train_copycat_romana_01.py",
+    "sha256": "b8aae23066184c1a5a5c3ee193a21b6827b0880acc191039f1b7f9d9d837bc65",
+    "reason": "Outside the selected 04–10 reproduction scope; historical/diagnostic/redundant or conversation artifact"
+  }
+]

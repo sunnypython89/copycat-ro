@@ -70,3 +70,11 @@ The strongest current limitation is incomplete consolidation of several learned 
 ## Status
 
 Research prototype. Benchmarks and training/evaluation code are being published incrementally for reproducibility.
+
+## Verified v1 evidence and unknowns
+
+This remains the principal model card. Adapter-folder template cards are excluded. The curriculum rule above is a hypothesis under investigation, not a universal proven rule. No model weights or adapters are part of this release.
+
+Copycat 10 starts from Copycat 07 and uses 426 examples for one epoch, learning rate 1e-5, rank 8, alpha 16, dropout 0.05, q_proj/v_proj and seed 42. These values are recorded in the saved training metadata. The recorded benchmark-10 result is 22/32 final answers and 21/32 final-plus-trace, with partial consolidation and regressions. See [experiment index](docs/EXPERIMENT_INDEX.md) and [report](reports/RAPORT_COPYCAT_10_CONSOLIDARE.md).
+
+Unknown/not fully recorded: upstream model commit revision, complete training-library versions, full authorship and licensing provenance for every dataset record, and independent annotation-review details. The saved configuration’s PEFT version does not establish the entire training environment. No additional license grants rights over the upstream model or derived artifacts. The existing base-model licensing note is retained in docs/REPRODUCIBILITY.md.

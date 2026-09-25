@@ -86,3 +86,7 @@ To be tested separately:
 > **The strength of the conclusion should be proportional to the strength of the evidence.**
 
 This may unify ambiguity, uncertainty, evidence relevance, elimination, and resistance to overconfident guessing.
+
+## Publication v1 qualification
+
+The 36-item editing scores above are historical: their referenced benchmark source is missing. Semantic scores are recorded annotations of archived outputs, not fresh inference or independent regrading. The elimination rule is a curriculum hypothesis under investigation. See [PUBLICATION_NOTES.md](PUBLICATION_NOTES.md).

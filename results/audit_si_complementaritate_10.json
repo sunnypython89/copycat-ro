@@ -1,0 +1,1497 @@
+{
+  "gold_count": 120,
+  "gold_categories": {
+    "ambiguitate_pastrata": 30,
+    "ambiguitate_rezolvata": 30,
+    "indiciu_irelevant": 30,
+    "eliminare_secventiala": 30
+  },
+  "benchmark_count": 32,
+  "benchmark_categories": {
+    "ambiguitate_pastrata": 8,
+    "ambiguitate_rezolvata": 8,
+    "indiciu_irelevant": 8,
+    "eliminare_secventiala": 8
+  },
+  "benchmark_sha256": "c80118f732860170371125a58266fa979e8efc0526c6864b2b53dd9d6b85eeec",
+  "logic_issues": [],
+  "exact_gold_benchmark_overlap": [],
+  "near_overlap_0_78": [
+    [
+      0.855,
+      "G02A",
+      "F2A"
+    ],
+    [
+      0.788,
+      "G02A",
+      "F3A"
+    ],
+    [
+      0.846,
+      "G02A",
+      "F4A"
+    ],
+    [
+      0.843,
+      "G02A",
+      "F5A"
+    ],
+    [
+      0.812,
+      "G02A",
+      "F6A"
+    ],
+    [
+      0.868,
+      "G02A",
+      "F7A"
+    ],
+    [
+      0.79,
+      "G02A",
+      "F8A"
+    ],
+    [
+      0.852,
+      "G02C",
+      "F5C"
+    ],
+    [
+      0.78,
+      "G02C",
+      "F7A"
+    ],
+    [
+      0.836,
+      "G04A",
+      "F6A"
+    ],
+    [
+      0.783,
+      "G05C",
+      "F2C"
+    ],
+    [
+      0.842,
+      "G07A",
+      "F3A"
+    ],
+    [
+      0.805,
+      "G07A",
+      "F4A"
+    ],
+    [
+      0.816,
+      "G07A",
+      "F5A"
+    ],
+    [
+      0.821,
+      "G07C",
+      "F4C"
+    ],
+    [
+      0.879,
+      "G08A",
+      "F2A"
+    ],
+    [
+      0.795,
+      "G08A",
+      "F4A"
+    ],
+    [
+      0.807,
+      "G08A",
+      "F5A"
+    ],
+    [
+      0.812,
+      "G08A",
+      "F6A"
+    ],
+    [
+      0.815,
+      "G08A",
+      "F7A"
+    ],
+    [
+      0.802,
+      "G08A",
+      "F8A"
+    ],
+    [
+      0.81,
+      "G08C",
+      "F5C"
+    ],
+    [
+      0.843,
+      "G09A",
+      "F2A"
+    ],
+    [
+      0.809,
+      "G09A",
+      "F5A"
+    ],
+    [
+      0.874,
+      "G09A",
+      "F6A"
+    ],
+    [
+      0.83,
+      "G09A",
+      "F7A"
+    ],
+    [
+      0.878,
+      "G09C",
+      "F6C"
+    ],
+    [
+      0.786,
+      "G10C",
+      "F7C"
+    ],
+    [
+      0.809,
+      "G11A",
+      "F3A"
+    ],
+    [
+      0.817,
+      "G11A",
+      "F4A"
+    ],
+    [
+      0.788,
+      "G11A",
+      "F7A"
+    ],
+    [
+      0.789,
+      "G11A",
+      "F8A"
+    ],
+    [
+      0.814,
+      "G11C",
+      "F2C"
+    ],
+    [
+      0.805,
+      "G11C",
+      "F8C"
+    ],
+    [
+      0.804,
+      "G12A",
+      "F3A"
+    ],
+    [
+      0.789,
+      "G12A",
+      "F4A"
+    ],
+    [
+      0.822,
+      "G12A",
+      "F5A"
+    ],
+    [
+      0.782,
+      "G12A",
+      "F6A"
+    ],
+    [
+      0.795,
+      "G12A",
+      "F7A"
+    ],
+    [
+      0.808,
+      "G12C",
+      "F3C"
+    ],
+    [
+      0.81,
+      "G13A",
+      "F1A"
+    ],
+    [
+      0.795,
+      "G13A",
+      "F2A"
+    ],
+    [
+      0.8,
+      "G13A",
+      "F4A"
+    ],
+    [
+      0.784,
+      "G13A",
+      "F4C"
+    ],
+    [
+      0.802,
+      "G13C",
+      "F4C"
+    ],
+    [
+      0.78,
+      "G14A",
+      "F1A"
+    ],
+    [
+      0.861,
+      "G14A",
+      "F2A"
+    ],
+    [
+      0.818,
+      "G14A",
+      "F3A"
+    ],
+    [
+      0.827,
+      "G14A",
+      "F4A"
+    ],
+    [
+      0.791,
+      "G14A",
+      "F5A"
+    ],
+    [
+      0.795,
+      "G14A",
+      "F6A"
+    ],
+    [
+      0.823,
+      "G14A",
+      "F7A"
+    ],
+    [
+      0.798,
+      "G14A",
+      "F8A"
+    ],
+    [
+      0.785,
+      "G14C",
+      "F5C"
+    ],
+    [
+      0.877,
+      "G16A",
+      "F2A"
+    ],
+    [
+      0.786,
+      "G16A",
+      "F3A"
+    ],
+    [
+      0.792,
+      "G16A",
+      "F4A"
+    ],
+    [
+      0.828,
+      "G16A",
+      "F5A"
+    ],
+    [
+      0.834,
+      "G16A",
+      "F6A"
+    ],
+    [
+      0.852,
+      "G16A",
+      "F7A"
+    ],
+    [
+      0.788,
+      "G16A",
+      "F8A"
+    ],
+    [
+      0.868,
+      "G16C",
+      "F7C"
+    ],
+    [
+      0.793,
+      "G18A",
+      "F4A"
+    ],
+    [
+      0.809,
+      "G18A",
+      "F6A"
+    ],
+    [
+      0.838,
+      "G19A",
+      "F2A"
+    ],
+    [
+      0.793,
+      "G19A",
+      "F4A"
+    ],
+    [
+      0.805,
+      "G19A",
+      "F5A"
+    ],
+    [
+      0.798,
+      "G19A",
+      "F6A"
+    ],
+    [
+      0.863,
+      "G19A",
+      "F7A"
+    ],
+    [
+      0.804,
+      "G19C",
+      "F4C"
+    ],
+    [
+      0.84,
+      "G20A",
+      "F4A"
+    ],
+    [
+      0.788,
+      "G20A",
+      "F7A"
+    ],
+    [
+      0.789,
+      "G20A",
+      "F8A"
+    ],
+    [
+      0.8,
+      "G21A",
+      "F2A"
+    ],
+    [
+      0.798,
+      "G21A",
+      "F3A"
+    ],
+    [
+      0.817,
+      "G21A",
+      "F4A"
+    ],
+    [
+      0.782,
+      "G21A",
+      "F5A"
+    ],
+    [
+      0.844,
+      "G21A",
+      "F6A"
+    ],
+    [
+      0.858,
+      "G21C",
+      "F6C"
+    ],
+    [
+      0.857,
+      "G22A",
+      "F2A"
+    ],
+    [
+      0.81,
+      "G22A",
+      "F4A"
+    ],
+    [
+      0.818,
+      "G22A",
+      "F7A"
+    ],
+    [
+      0.841,
+      "G22C",
+      "F7C"
+    ],
+    [
+      0.798,
+      "G25A",
+      "F2A"
+    ],
+    [
+      0.787,
+      "G25A",
+      "F8A"
+    ],
+    [
+      0.854,
+      "G26A",
+      "F2A"
+    ],
+    [
+      0.832,
+      "G26A",
+      "F4A"
+    ],
+    [
+      0.819,
+      "G26A",
+      "F5A"
+    ],
+    [
+      0.836,
+      "G26A",
+      "F6A"
+    ],
+    [
+      0.866,
+      "G26A",
+      "F7A"
+    ],
+    [
+      0.79,
+      "G26A",
+      "F8A"
+    ],
+    [
+      0.809,
+      "G26C",
+      "F5C"
+    ],
+    [
+      0.812,
+      "G26D",
+      "F2B"
+    ],
+    [
+      0.793,
+      "G27A",
+      "F2A"
+    ],
+    [
+      0.792,
+      "G27A",
+      "F3A"
+    ],
+    [
+      0.782,
+      "G27A",
+      "F7A"
+    ],
+    [
+      0.854,
+      "G28A",
+      "F2A"
+    ],
+    [
+      0.795,
+      "G28A",
+      "F4A"
+    ],
+    [
+      0.795,
+      "G28A",
+      "F5A"
+    ],
+    [
+      0.812,
+      "G28A",
+      "F6A"
+    ],
+    [
+      0.854,
+      "G28A",
+      "F7A"
+    ],
+    [
+      0.802,
+      "G28A",
+      "F8A"
+    ],
+    [
+      0.868,
+      "G28C",
+      "F7C"
+    ],
+    [
+      0.795,
+      "G29A",
+      "F2A"
+    ],
+    [
+      0.8,
+      "G29A",
+      "F5A"
+    ],
+    [
+      0.826,
+      "G29A",
+      "F6A"
+    ],
+    [
+      0.817,
+      "G29C",
+      "F2C"
+    ],
+    [
+      0.87,
+      "G30A",
+      "F3A"
+    ],
+    [
+      0.782,
+      "G30A",
+      "F6A"
+    ],
+    [
+      0.87,
+      "G30C",
+      "F3C"
+    ]
+  ],
+  "old_benchmark_overlap_0_82": [],
+  "temporarily_excluded": [],
+  "native_review": [],
+  "replay_counts": {
+    "editare04": 104,
+    "noop": 35,
+    "incertitudine": 27,
+    "gold06": 30,
+    "gold07": 30,
+    "gold08": 40,
+    "gold09": 40,
+    "gold10": 120,
+    "total": 426
+  },
+  "oracle_union": {
+    "lectia_06": {
+      "counts": {
+        "numai Copycat 08 epoca 1": 1,
+        "la două": 6,
+        "greșit la toate": 6,
+        "numai Copycat 09 epoca 1": 1,
+        "toate trei": 7,
+        "numai Copycat 07 epoca 1": 3
+      },
+      "oracle_union": 18,
+      "total": 24,
+      "details": [
+        {
+          "id": "RA1",
+          "correct_models": [
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "numai Copycat 08 epoca 1"
+        },
+        {
+          "id": "RA2",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "RA3",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "RA4",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "RA5",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "RA6",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "RA7",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "RA8",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "NA1",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "NA2",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "NA3",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "NA4",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "NA5",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "NA6",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "NA7",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "NA8",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "CR1",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "CR2",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "CR3",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "CR4",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "TP1",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "TP2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "TP3",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "TP4",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        }
+      ]
+    },
+    "lectia_07": {
+      "counts": {
+        "toate trei": 10,
+        "la două": 9,
+        "numai Copycat 09 epoca 1": 2,
+        "greșit la toate": 1,
+        "numai Copycat 08 epoca 1": 1,
+        "numai Copycat 07 epoca 1": 1
+      },
+      "oracle_union": 23,
+      "total": 24,
+      "details": [
+        {
+          "id": "R1",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "R2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "R3",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "R4",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "R5",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "R6",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "R7",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "R8",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "I1",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "I2",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "I3",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "I4",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "I5",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "I6",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "M1",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "M2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "M3",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "M4",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "M5",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "M6",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "D1",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "D3",
+          "correct_models": [
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "numai Copycat 08 epoca 1"
+        },
+        {
+          "id": "D4",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        }
+      ]
+    },
+    "lectia_08": {
+      "counts": {
+        "toate trei": 6,
+        "greșit la toate": 6,
+        "la două": 11,
+        "numai Copycat 08 epoca 1": 4,
+        "numai Copycat 09 epoca 1": 1,
+        "numai Copycat 07 epoca 1": 4
+      },
+      "oracle_union": 26,
+      "total": 32,
+      "details": [
+        {
+          "id": "F1A",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F1B",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F1C",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F1D",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F2A",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F2B",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F2C",
+          "correct_models": [
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "numai Copycat 08 epoca 1"
+        },
+        {
+          "id": "F2D",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F3A",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F3B",
+          "correct_models": [
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "numai Copycat 08 epoca 1"
+        },
+        {
+          "id": "F3C",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F3D",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F4A",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "F4B",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F4C",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F4D",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "F5A",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F5B",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "F5C",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "F5D",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F6A",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F6B",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F6C",
+          "correct_models": [
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "numai Copycat 08 epoca 1"
+        },
+        {
+          "id": "F6D",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F7A",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F7B",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F7C",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "F7D",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F8A",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F8B",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F8C",
+          "correct_models": [
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "numai Copycat 08 epoca 1"
+        },
+        {
+          "id": "F8D",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        }
+      ]
+    },
+    "lectia_09": {
+      "counts": {
+        "toate trei": 10,
+        "la două": 11,
+        "numai Copycat 09 epoca 1": 6,
+        "greșit la toate": 3,
+        "numai Copycat 07 epoca 1": 2
+      },
+      "oracle_union": 29,
+      "total": 32,
+      "details": [
+        {
+          "id": "F1D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F1D3",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F1AM",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F1IR",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F2D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F2D3",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "F2AM",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F2IR",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F3D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F3D3",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "F3AM",
+          "correct_models": [
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F3IR",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F4D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F4D3",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F4AM",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "F4IR",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F5D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F5D3",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F5AM",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F5IR",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F6D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F6D3",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "F6AM",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F6IR",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "F7D2",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        },
+        {
+          "id": "F7D3",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "F7AM",
+          "correct_models": [
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "numai Copycat 09 epoca 1"
+        },
+        {
+          "id": "F7IR",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1"
+          ],
+          "bucket": "la două"
+        },
+        {
+          "id": "F8D2",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F8D3",
+          "correct_models": [
+            "Copycat 07 epoca 1"
+          ],
+          "bucket": "numai Copycat 07 epoca 1"
+        },
+        {
+          "id": "F8AM",
+          "correct_models": [],
+          "bucket": "greșit la toate"
+        },
+        {
+          "id": "F8IR",
+          "correct_models": [
+            "Copycat 07 epoca 1",
+            "Copycat 08 epoca 1",
+            "Copycat 09 epoca 1"
+          ],
+          "bucket": "toate trei"
+        }
+      ]
+    }
+  }
+}
