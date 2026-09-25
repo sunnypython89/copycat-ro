@@ -1,127 +1,229 @@
 # Copycat RO
 
-**Copycat RO** is an independent experimental project for training and evaluating Romanian-language LLM behavior on semantic precision, ambiguity, uncertainty, controlled editing, and evidence-based elimination.
+**Copycat RO** is an independent research project exploring how a Romanian-language LLM can learn **semantic discipline**: when to stay uncertain, when evidence is strong enough to choose, and how to avoid changing or inferring more than the text supports.
 
-Base model:
+It is built on:
 
 `OpenLLM-Ro/RoMistral-7b-Instruct-2025-04-23`
 
-The project uses incremental LoRA adapters, frozen benchmarks, replay, error-driven curriculum design, and manual native-speaker review.
+The project combines incremental LoRA training, frozen benchmarks, replay, error analysis, and native-speaker review.
 
-> **Core rule under investigation:** new information should eliminate a candidate only when it contradicts that candidate or makes it incompatible with the available evidence.
+---
 
-## Current status
+## The idea in one sentence
 
-Current consolidation checkpoint: **Copycat 10**
+Copycat is trained not only to produce the right answer, but to respect the boundary between:
 
-Historical editing result (missing benchmark source; not rerunnable here):
-- strict editing benchmark: **36/36**
+- what the text allows;
+- what the text rules out;
+- what is still ambiguous.
 
-Current semantic results:
-- Lesson 05: **9/16**
-- Lesson 06: **12/24**
-- Lesson 07: **17/24**
-- Lesson 08: **19/32**
-- Lesson 09: **20/32**
-- Benchmark 10: **22/32**
+The current central curriculum hypothesis is:
 
-Benchmark 10:
-- preserve ambiguity: **7/8**
-- resolve ambiguity: **6/8**
-- ignore irrelevant evidence: **5/8**
-- sequential elimination: **4/8**
-- correct final answer + correct trace: **21/32**
+> **New information eliminates a candidate only if it contradicts that candidate or makes it incompatible with the available evidence.**
 
-## Main research question
+Romanian:
 
-The project is currently investigating whether several semantic constraints can coexist stably in one adapter.
+> **Informația nouă elimină o variantă numai dacă o contrazice sau o face incompatibilă cu dovezile disponibile.**
 
-Different checkpoints already show complementary abilities. Oracle-union results across Copycat 07–09:
+This is a research hypothesis under investigation, not a claimed universal rule of language.
 
-| Benchmark | Oracle union |
+---
+
+## Why this project exists
+
+A language model can often give a plausible answer even when the evidence is incomplete.
+
+Copycat studies a narrower question:
+
+> **Can a model learn to control the strength of its conclusion according to the strength of the evidence?**
+
+That question appears in several forms:
+
+- preserve ambiguity when several interpretations remain possible;
+- resolve ambiguity when evidence removes the alternatives;
+- ignore irrelevant information;
+- avoid inventing meanings that are not supported;
+- keep track of candidates across several elimination steps;
+- edit only what was explicitly requested.
+
+The curriculum is built from the model's mistakes. A recurring failure becomes the next lesson.
+
+---
+
+## What has been learned so far
+
+The strongest current finding is **complementarity between checkpoints**.
+
+Different Copycat versions solve different parts of the same semantic problem. When their correct answers are combined diagnostically as an "oracle union", the family performs substantially better than any single checkpoint:
+
+| Benchmark | Oracle union across Copycat 07–09 |
 |---|---:|
-| Lesson 06 | 18/24 |
-| Lesson 07 | 23/24 |
-| Lesson 08 | 26/32 |
-| Lesson 09 | 29/32 |
+| Lesson 06 | **18/24** |
+| Lesson 07 | **23/24** |
+| Lesson 08 | **26/32** |
+| Lesson 09 | **29/32** |
 
-This suggests that substantial capability exists across the checkpoint family, while consolidation into one adapter remains incomplete.
+This suggests that many capabilities are already reachable from the same base model, but they are not yet consolidated reliably into one LoRA adapter.
 
-## Method
+The present research problem is therefore less:
 
-The curriculum grows from errors rather than from a fixed static syllabus:
+> "Can Copycat ever learn this?"
 
-1. run a frozen benchmark;
-2. classify the error;
-3. extract the violated rule;
-4. build new examples that test the rule rather than copy the old question;
-5. increase difficulty;
-6. keep successful behavioral invariants as stable landmarks;
-7. test conflicts between landmarks.
+and more:
 
-Observed landmarks include:
+> "Can Copycat keep several learned semantic rules at the same time without one weakening another?"
+
+---
+
+## Current checkpoint
+
+Current consolidation checkpoint:
+
+`copycat_10_consolidare_epoch1_adapter`
+
+Recorded results:
+
+| Evaluation | Score |
+|---|---:|
+| Lesson 05 | **9/16** |
+| Lesson 06 | **12/24** |
+| Lesson 07 | **17/24** |
+| Lesson 08 | **19/32** |
+| Lesson 09 | **20/32** |
+| Benchmark 10 | **22/32** |
+
+Benchmark 10 breakdown:
+
+| Skill | Score |
+|---|---:|
+| Preserve ambiguity | **7/8** |
+| Resolve ambiguity | **6/8** |
+| Ignore irrelevant evidence | **5/8** |
+| Sequential elimination | **4/8** |
+| Correct final answer + correct trace | **21/32** |
+
+The historical strict-editing result is **36/36**, but its original benchmark source is missing from the current archive, so that result is documented as historical rather than freshly reproducible from this release.
+
+---
+
+## How the curriculum works
+
+Each lesson follows the same research loop:
+
+```
+model error
+    ↓
+classify the failure
+    ↓
+extract the violated rule
+    ↓
+build new examples testing that rule
+    ↓
+freeze a new benchmark
+    ↓
+train one controlled step
+    ↓
+measure gains, regressions and new conflicts
+```
+
+Examples of learned "landmarks":
+
 - do not edit outside the requested scope;
-- do not invent a meaning without evidence;
+- do not invent a meaning when evidence is absent;
 - preserve ambiguity while multiple candidates remain valid;
-- resolve ambiguity when evidence removes all but one candidate;
-- ignore information that does not actually eliminate a candidate;
-- preserve candidate state across sequential elimination.
+- resolve ambiguity once all but one candidate are eliminated;
+- do not treat every new detail as evidence;
+- do not reintroduce a candidate that was already eliminated.
 
-## Important observed limitation
+The project deliberately keeps older checkpoints because regressions are useful evidence.
 
-A recurring failure mode is confusing:
+---
 
-`new information appeared`
+## Main limitation observed
 
-with:
+The clearest repeatable limitation is **interference between learned rules**.
 
-`new information actually eliminates a candidate`
+A simplified pattern is:
 
-This is now a central curriculum target.
+```
+learn rule A
+→ rule B weakens
+→ repair B
+→ A weakens again
+```
 
-## Repository structure
+Copycat 10 partially reduces this oscillation, but does not yet match the best behavior of every earlier checkpoint at once.
 
-- `docs/LIMITS_v1.md` — detailed report of observed limitations
-- `docs/RESULTS.md` — checkpoint and benchmark history
-- `benchmarks/` — six frozen semantic benchmarks and SHA-256 hashes
-- `gold/` — exact training datasets and replay subsets
-- `training/`, `evaluation/` — historical scripts
-- `results/`, `reports/` — raw outputs, annotations and technical reports
-- [Experiment index](docs/EXPERIMENT_INDEX.md), [publication notes](docs/PUBLICATION_NOTES.md), [reproduction instructions](docs/REPRODUCIBILITY.md)
+Current hypotheses include:
 
-## Academic review
+- LoRA rank `r=8` may be too restrictive;
+- adapting only `q_proj` and `v_proj` may limit consolidation;
+- strictly sequential lessons may encourage interference;
+- hard-negative replay may preserve decision boundaries better;
+- specialized adapters may eventually need consolidation or routing.
 
-This is an **independent project** and is not presented as an official project of Politehnica University of Bucharest or OpenLLM-Ro.
+These are hypotheses to be tested separately, not conclusions already established.
 
-The repository is public to make the methodology, failures, benchmark evolution, and training results available for academic review and potential collaboration.
+---
 
-## Licensing note
+## Start here
 
-The project builds on the OpenLLM-Ro RoMistral model. Any redistribution of model weights or derived adapters must respect the applicable base-model license and attribution requirements.
+If you are reviewing the project for the first time:
 
-## Current diagnostic directions
+1. **[Reading guide](docs/READING_GUIDE.md)** — fastest overview of what to read and why.
+2. **[Experiment index](docs/EXPERIMENT_INDEX.md)** — exact checkpoint lineage, datasets, hyperparameters and scores.
+3. **[Observed limits](docs/LIMITS_v1.md)** — current failure families and technical hypotheses.
+4. **[Results summary](docs/RESULTS.md)** — compact score history.
+5. **[Reproducibility](docs/REPRODUCIBILITY.md)** — what can and cannot be reproduced from this release.
+6. **[Publication notes](docs/PUBLICATION_NOTES.md)** — exclusions, missing artifacts and reproducibility boundaries.
 
-- higher LoRA rank;
-- adding `k_proj` and `o_proj`;
-- interleaved instead of strictly sequential curriculum;
-- hard-negative replay;
-- specialized adapters with consolidation or routing.
+---
 
-The goal is not to maximize one benchmark score. The goal is to discover stable semantic rules that continue to work as tests become harder.
+## Repository map
 
-## Reproducible artifacts v1
+| Path | Purpose |
+|---|---|
+| `benchmarks/` | frozen semantic benchmarks and SHA-256 hashes |
+| `gold/` | training Gold sets and replay subsets |
+| `training/` | historical training scripts |
+| `evaluation/` | evaluation and scoring scripts |
+| `results/` | archived raw and scored outputs |
+| `reports/` | detailed experiment reports |
+| `docs/` | experiment index, limitations and reproducibility notes |
+| `tools/` | publication verification and secret-scanning utilities |
 
-This release supports offline verification of datasets, recorded results and annotations, and an explicit available-benchmark workflow for new experiments. No weights or adapters are distributed. Full historical end-to-end reproduction is limited by the missing editing benchmark and unpinned runtime/model revisions. Semantic scores above are recorded human annotations, not freshly rerun evaluations.
+No model weights or LoRA adapter directories are published in this repository.
 
-From the repository root, without GPU dependencies:
+---
+
+## Reproducibility
+
+From the repository root, publication integrity can be checked without GPU dependencies:
 
 ```bash
 python tools/verify_publication.py
 python tools/scan_secrets.py .
 ```
 
-Curriculum hypothesis under investigation, not a universal demonstrated truth:
+The six published semantic benchmark files match their recorded hashes.
 
-> Informația nouă elimină o variantă numai dacă o contrazice sau o face incompatibilă cu dovezile disponibile.
->
-> New information eliminates a candidate only if it contradicts that candidate or makes it incompatible with the available evidence.
+This release supports verification of datasets, archived outputs, annotations, scripts and experiment metadata. It does **not** claim bit-for-bit historical training reproduction because the upstream model revision and full software environment were not completely pinned.
+
+---
+
+## Academic status
+
+Copycat RO is an **independent research project**.
+
+It is not presented as an official project of Politehnica University of Bucharest, OpenLLM-Ro, or another institution.
+
+The repository is public so that the methodology, failures, regressions and experimental record can be inspected and discussed.
+
+---
+
+## Licensing note
+
+The project builds on the OpenLLM-Ro RoMistral model. Any redistribution of derived model weights or adapters must respect the applicable upstream license and attribution requirements.
+
+The public repository currently distributes research code, datasets, benchmarks, results and documentation, but **not model weights or adapters**.
