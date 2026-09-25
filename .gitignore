@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local caches
+.cache/
+huggingface/
+transformers_cache/
+
+# Large model / adapter artifacts
+*_adapter/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+
+# Training runtime
+wandb/
+runs/
+checkpoints/
+
+# Local environment
+.env
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
